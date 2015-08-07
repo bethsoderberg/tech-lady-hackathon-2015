@@ -29,6 +29,11 @@ body {
   line-height: 1.3;
   font-weight: inherit; }
 
+.left-col, .right-col {
+	float: left;
+	width: 50%;
+	text-align:left;
+}
 /*********************************************
  * HEADERS
  *********************************************/
@@ -265,3 +270,39 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: #42affa; }
+
+/*********************************************
+ * CODE FORMATTING
+ *********************************************/
+.tag {
+	color: pink;
+}
+
+.element {
+	color: orange;
+}
+
+.tag-highlight {
+	color: purple;
+}
+ 
+.element-highlight {
+	color: green;
+}
+
+/* Nesting */
+.nest-1 {
+	color: red;
+}
+
+.nest-2 {
+	color: orange;
+}
+
+.nest-3 {
+	color: yellow;
+}
+
+.nest-4 {
+	color: green;
+}
