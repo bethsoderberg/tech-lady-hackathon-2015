@@ -15,10 +15,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/beth.css" id="theme">
 
 		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<!--<link rel="stylesheet" href="lib/css/zenburn.css">-->
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -87,31 +87,143 @@
                 
                 <section>
                 	<h2>Basic HTML Page Structure</h2>
+<pre>
+<span class="tag"><<span class="element">!DOCTYPE html</span>></span>
+<span class="tag"><<span class="element">html</span>></span>
+    <span class="tag"><<span class="element">head</span>></span>
+    	<span class="tag"><<span class="element">title</span>></span>Page Title<span class="tag"><&#47;<span class="element">title</span>></span>
+    <span class="tag"><&#47;<span class="element">head</span>></span>
+    <span class="tag"><<span class="element">body</span>></span>
+        <span class="tag"><<span class="element">h1</span>></span>This is a Headline<span class="tag"><&#47;<span class="element">h1</span>></span>
+        <span class="tag"><<span class="element">p</span>></span>This is a Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+    <span class="tag"><&#47;<span class="element">body</span>></span>
+<span class="tag"><&#47;<span class="element">html</span>></span>
+                    </pre>
                 </section>
                 
                 <section>
-                	<h2>Doctype</h2>
+                	<h2>Doctype Declaration</h2>
+<pre>
+<span class="tag-highlight"><<span class="element-highlight">!DOCTYPE html</span>></span>
+<span class="tag"><<span class="element">html</span>></span>
+    <span class="tag"><<span class="element">head</span>></span>
+    	<span class="tag"><<span class="element">title</span>></span>Page Title<span class="tag"><&#47;<span class="element">title</span>></span>
+    <span class="tag"><&#47;<span class="element">head</span>></span>
+    <span class="tag"><<span class="element">body</span>></span>
+        <span class="tag"><<span class="element">h1</span>></span>This is a Headline<span class="tag"><&#47;<span class="element">h1</span>></span>
+        <span class="tag"><<span class="element">p</span>></span>This is a Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+    <span class="tag"><&#47;<span class="element">body</span>></span>
+<span class="tag"><&#47;<span class="element">html</span>></span>
+                    </pre>
+                <ul>
+                	<li>tells the browser which version of HTML the page is written in</li>
+                    <li><a href="http://www.corelangs.com/html/introduction/doctype.html">different doctype declarations</a> correspond to different versions of HTML</li>
+                </ul>
                 </section>
-                
                 <section>
                 	<h2>HTML Root Element</h2>
+<pre>
+<span class="tag"><<span class="element">!DOCTYPE html</span>></span>
+<span class="tag-highlight"><<span class="element-highlight">html</span>></span>
+    <span class="tag"><<span class="element">head</span>></span>
+    	<span class="tag"><<span class="element">title</span>></span>Page Title<span class="tag"><&#47;<span class="element">title</span>></span>
+    <span class="tag"><&#47;<span class="element">head</span>></span>
+    <span class="tag"><<span class="element">body</span>></span>
+        <span class="tag"><<span class="element">h1</span>></span>This is a Headline<span class="tag"><&#47;<span class="element">h1</span>></span>
+        <span class="tag"><<span class="element">p</span>></span>This is a Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+    <span class="tag"><&#47;<span class="element">body</span>></span>
+<span class="tag-highlight"><&#47;<span class="element-highlight">html</span>></span>
+                    </pre>
+                    <ul>
+                    	<li>always contains one <span class="tag"><<span class="element">head</span>></span> element and one <span class="tag"><<span class="element">body</span>></span> element</li>
+                    </ul>
                 </section>
                 
                 <section>
                 	<h2>Head Element</h2>
+<pre>
+<span class="tag"><<span class="element">!DOCTYPE html</span>></span>
+<span class="tag"><<span class="element">html</span>></span>
+    <span class="tag-highlight"><<span class="element-highlight">head</span>></span>
+    	<span class="tag"><<span class="element">title</span>></span>Page Title<span class="tag"><&#47;<span class="element">title</span>></span>
+    <span class="tag-highlight"><&#47;<span class="element-highlight">head</span>></span>
+    <span class="tag"><<span class="element">body</span>></span>
+        <span class="tag"><<span class="element">h1</span>></span>This is a Headline<span class="tag"><&#47;<span class="element">h1</span>></span>
+        <span class="tag"><<span class="element">p</span>></span>This is a Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+    <span class="tag"><&#47;<span class="element">body</span>></span>
+<span class="tag"><&#47;<span class="element">html</span>></span>
+                    </pre>
+                    <ul>
+                    	<li>includes metadata elements that do not render in the browser</li>
+                        <li>the <span class="tag"><<span class="element">title</span>></span> element is required</li>
+                        <li>the only HTML elements that can be used in the <span class="tag"><<span class="element">head</span>></span> element are:
+                        <ul>
+                        	<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base" target="_blank">&lt;base&gt;</a></li>
+	<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link" target="_blank">&lt;link&gt;</a></li>
+	<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="_blank">&lt;meta&gt;</a></li>
+	<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript" target="_blank">&lt;noscript&gt;</a></li>
+	<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script" target="_blank">&lt;script&gt;</a></li>
+	<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style" target="_blank">&lt;style&gt;</a></li>
+	<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" target="_blank">&lt;title&gt;</a> (required)</li>
+                        </ul>
+                        </li>
+                    </ul>
                 </section>
                 
                 <section>
                 	<h2>Body Element</h2>
+<pre>
+<span class="tag"><<span class="element">!DOCTYPE html</span>></span>
+<span class="tag"><<span class="element">html</span>></span>
+    <span class="tag"><<span class="element">head</span>></span>
+    	<span class="tag"><<span class="element">title</span>></span>Page Title<span class="tag"><&#47;<span class="element">title</span>></span>
+    <span class="tag"><&#47;<span class="element">head</span>></span>
+    <span class="tag-highlight"><<span class="element-highlight">body</span>></span>
+        <span class="tag"><<span class="element">h1</span>></span>This is a Headline<span class="tag"><&#47;<span class="element">h1</span>></span>
+        <span class="tag"><<span class="element">p</span>></span>This is a Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+    <span class="tag-highlight"><&#47;<span class="element-highlight">body</span>></span>
+<span class="tag"><&#47;<span class="element">html</span>></span>
+                    </pre>
+                    <ul>
+                    	<li>the <span class="tag"><<span class="element">body</span>></span> element contains all of the  content that is visible in the browser</li>
+                    </ul>
                 </section>
                 
                 <section>
                 	<h2>Nesting</h2>
+<pre>
+<span class="nest-1"><<span class="nest-1">!DOCTYPE html</span>></span>
+<span class="nest-2"><<span class="nest-2">html</span>></span>
+    <span class="nest-3"><<span class="nest-3">head</span>></span>
+    	<span class="nest-4"><<span class="nest-4">title</span>></span>Page Title<span class="nest-4"><&#47;<span class="nest-4">title</span>></span>
+    <span class="nest-3"><&#47;<span class="nest-3">head</span>></span>
+    <span class="nest-3"><<span class="nest-3">body</span>></span>
+        <span class="nest-4"><<span class="nest-4">h1</span>></span>This is a Headline<span class="nest-4"><&#47;<span class="nest-4">h1</span>></span>
+        <span class="nest-4"><<span class="nest-4">p</span>></span>This is a Paragraph.<span class="nest-4"><&#47;<span class="nest-4">p</span>></span>
+    <span class="nest-3"><&#47;<span class="nest-3">body</span>></span>
+<span class="nest-2"><&#47;<span class="nest-2">html</span>></span>
+                    </pre>
+                    <ul>
+                    	<li>each element is "nested" within another element</li>
+                        <li>indentation is used to organize HTML documents</li>
+                        <li>"white space" created by indentation is ignored by browsers</li>
+                    </ul>
                 </section>
-                
                 <section>
-                	<h2>Whitespace</h2>
-                </section>
+                	<h2>What's wrong with the nesting here?</h2>
+<pre>
+<span class="tag"><<span class="element">!DOCTYPE html</span>></span>
+<span class="tag"><<span class="element">html</span>></span>
+    <span class="tag"><<span class="element">head</span>></span>
+    	<span class="tag"><<span class="element">title</span>></span>Page Title<span class="tag"><&#47;<span class="element">title</span>></span>
+    <span class="tag"><<span class="element">body</span>></span>
+    <span class="tag"><&#47;<span class="element">head</span>></span>
+        <span class="tag"><<span class="element">h1</span>></span><span class="tag"><<span class="element">p</span>></span>This is a Headline<span class="tag"><&#47;<span class="element">h1</span>></span>
+        This is a Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+    <span class="tag"><&#47;<span class="element">body</span>></span>
+<span class="tag"><&#47;<span class="element">html</span>></span>
+                    </pre>
+                    </section>
                 
                 <section>
                 	<h2>Our Website Files</h2>
@@ -120,7 +232,8 @@
                 
                 <section>
                 	<h2>How to Look at HTML in the Browser</h2>
-                    <h3>Chrome</h3>
+                    <div class="left-col">
+                    	<h3>Chrome</h3>
                    		<h4>View Source</h4>
                     		<ul>
                             	<li>Mac: ⌘-Option-U</li>
@@ -130,34 +243,111 @@
                             <ul>
                             	<li>right click > Inspect Element</li>
                             </ul>
-                    <h3>Firefox</h3>
+                    </div>
+                    <div class="right-col">
+                    	<h3>Firefox</h3>
                     	<h4>View Source</h4>
                             <ul>
                             	<li>Mac: Cmd+U</li>
                                 <li>PC: Ctrl+U</li>
                             </ul>
-                        <h4><a href="https://getfirebug.com/" target="_blank">Firebug</a></h4>
+                        <h4>Firebug</h4>
+                        <p><a href="https://getfirebug.com/" target="_blank">getfirebug.com</a></p>
                             <ul>
                             	<li>right click > Inspect Element with Firebug<br />
                                 OR<br />
                                 click Firebug icon in toolbar</li>
                             </ul>
+                	</div>
                 </section>
                 
                 
                 <section>
                 	<h2>Paragraph Element</h2>
-                    
+                    <div class="left-col">
+                    <span class="tag"><<span class="element">p</span>></span>This is a Paragraph. I'm made out of words that are organized by grammar rules.<span class="tag"><&#47;<span class="element">p</span>></span><br /><br />
+                    <span class="tag"><<span class="element">p</span>></span>I was always terrible at understanding English language syntax and grammar when I tried to learn it in school. I was afraid to learn to code because of this, but I did it anyway.<span class="tag"><&#47;<span class="element">p</span>></span>
+                    </div>
+                    <div class="right-col">
+                    <p>This is a Paragraph. I'm made out of words that are organized by grammar rules.</p>
+                    <p>I was always terrible at understanding English language syntax and grammar when I tried to learn it in school. I was afraid to learn to code because of this, but I did it anyway.</p>
+                    </div>
                 </section>
                 
                 <section>
                 	<h2>Header Elements</h2>
-                    
+                    <div class="left-col">
+                        <span class="tag"><<span class="element">h1</span>></span>Header 1<span class="tag"><&#47;<span class="element">h1</span>></span><br />
+                        <span class="tag"><<span class="element">h2</span>></span>Header 2<span class="tag"><&#47;<span class="element">h2</span>></span><br />
+                        <span class="tag"><<span class="element">h3</span>></span>Header 3<span class="tag"><&#47;<span class="element">h3</span>></span><br />
+                        <span class="tag"><<span class="element">h4</span>></span>Header 4<span class="tag"><&#47;<span class="element">h4</span>></span><br />
+                        <span class="tag"><<span class="element">h5</span>></span>Header 5<span class="tag"><&#47;<span class="element">h5</span>></span><br />
+                        <span class="tag"><<span class="element">h6</span>></span>Header 6<span class="tag"><&#47;<span class="element">h6</span>></span>
+                    </div>
+                    <div class="right-col">
+                    	<h1>Header 1</h1>
+                        <h2>Header 2</h2>
+                        <h3>Header 3</h3>
+                        <h4>Header 4</h4>
+                        <h5>Header 5</h5>
+                        <h6>Header 6</h6>
+                    </div>
                 </section>
                 
                 <section>
                 	<h2>List Elements</h2>
-                    
+                    <div class="left-col">
+<span class="tag"><<span class="element">ul</span>></span><br />
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <span class="tag"><<span class="element">li</span>></span>unordered list<span class="tag"><&#47;<span class="element">li</span>></span><br />
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <span class="tag"><<span class="element">li</span>></span>unordered list<span class="tag"><&#47;<span class="element">li</span>></span><br />
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <span class="tag"><<span class="element">li</span>></span>unordered list<span class="tag"><&#47;<span class="element">li</span>></span><br />
+<span class="tag"><&#47;<span class="element">ul</span>></span>
+<br />
+<ul>
+                        	<li>unordered list</li>
+                            <li>unordered list</li>
+                            <li>unordered list</li>
+                        </ul>
+                    </div>
+                    <div class="right-col">
+<span class="tag"><<span class="element">ol</span>></span><br />
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <span class="tag"><<span class="element">li</span>></span>ordered list<span class="tag"><&#47;<span class="element">li</span>></span><br />
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <span class="tag"><<span class="element">li</span>></span>ordered list<span class="tag"><&#47;<span class="element">li</span>></span><br />
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <span class="tag"><<span class="element">li</span>></span>ordered list<span class="tag"><&#47;<span class="element">li</span>></span><br />
+<span class="tag"><&#47;<span class="element">ol</span>></span>
+<br />
+                        <ol>
+                        	<li>ordered list</li>
+                            <li>ordered list</li>
+                            <li>ordered list</li>
+                        </ol>
+                    </div>
+                </section>
+                
+                <section>
+                	<h2>List Elements Can Be Nested</h2>
+                    <div class="left-col">
+<span class="tag"><<span class="element">ol</span>></span><br />
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <span class="tag"><<span class="element">li</span>></span> &nbsp; <span class="tag"><&#47;<span class="element">li</span>></span><br />
+  &nbsp;  &nbsp;  &nbsp;  &nbsp; <span class="tag"><<span class="element">ol</span>></span><br />
+  &nbsp;  &nbsp;  &nbsp;  &nbsp;   &nbsp;  &nbsp;  &nbsp;  &nbsp; <span class="tag"><<span class="element">li</span>></span> &nbsp; <span class="tag"><&#47;<span class="element">li</span>></span><br />
+  &nbsp;  &nbsp;  &nbsp;  &nbsp;    &nbsp;  &nbsp;  &nbsp;  &nbsp; <span class="tag"><<span class="element">li</span>></span> &nbsp; <span class="tag"><&#47;<span class="element">li</span>></span><br />
+   &nbsp;  &nbsp;  &nbsp;  &nbsp; <span class="tag"><&#47;<span class="element">ol</span>></span><br />
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <span class="tag"><<span class="element">li</span>></span> &nbsp; <span class="tag"><&#47;<span class="element">li</span>></span><br />
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; <span class="tag"><<span class="element">li</span>></span> &nbsp; <span class="tag"><&#47;<span class="element">li</span>></span><br />
+<span class="tag"><&#47;<span class="element">ol</span>></span>
+</div>
+<div class="right-col">
+						<ol>
+                        	<li>first level</li>
+                            	<ol>
+                                	<li>second level</li>
+                                    <li>second level</li>
+                                </ol>
+                            <li>first level</li>
+                            <li>first level</li>
+                        </ol>
+</div>
                 </section>
                 
                 <section>
