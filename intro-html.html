@@ -51,31 +51,21 @@
 				<section>
 					<h2>What is HTML?</h2>
                     <section id="fragments">
-                        <p>text here
-                        </p>
+                        <ul>
+                        	<li>HTML stands for Hypertext Markup Language</li>
+                            <li>Used to "mark up" text in order to make the "skeleton" of a web page</li>
+                        </ul>
                     </section>
 				</section>
                 
                 <section>
                 	<h2>Basic Website Structure</h2>
-                    <table>
-                    	<tr>
-                   			<td>HTML</td>
-                            <td> + CSS</td>
-                            <td> + JS</td>
-                            <td> = Website</td>
-                   		</tr>
-                        <tr>
-                   			<td>structure</td>
-                            <td>style</td>
-                            <td>interaction</td>
-                            <td>&nbsp;</td>
-                   		</tr>
-                    </table>
+                    
+                    HTML <span class="small">structure</span> + CSS <span class="small">style</span> + JS <span class="small">interaction</span> = web page
                 </section>
                 
                 <section>
-                	<h2>Element vs. Tag</h2>
+                	<h2>Elements and Tags</h2>
                     <p>image with an element and tag pair with parts (element, opening tag, closing tag) labeled</p>
                     <ul>
                     	<li>Elements indicate the purpose of a tag.</li>
@@ -205,6 +195,7 @@
                     </pre>
                     <ul>
                     	<li>each element is "nested" within another element</li>
+                        <li>whichever element "opens" first also needs to "close" last</li>
                         <li>indentation is used to organize HTML documents</li>
                         <li>"white space" created by indentation is ignored by browsers</li>
                     </ul>
@@ -224,44 +215,7 @@
 <span class="tag"><&#47;<span class="element">html</span>></span>
                     </pre>
                     </section>
-                
-                <section>
-                	<h2>Our Website Files</h2>
-                    <p>screenshot of website file structure here</p>
-                </section>
-                
-                <section>
-                	<h2>How to Look at HTML in the Browser</h2>
-                    <div class="left-col">
-                    	<h3>Chrome</h3>
-                   		<h4>View Source</h4>
-                    		<ul>
-                            	<li>Mac: ⌘-Option-U</li>
-                                <li>PC: Ctrl+U</li>
-                            </ul>
-                        <h4>Inspector</h4>
-                            <ul>
-                            	<li>right click > Inspect Element</li>
-                            </ul>
-                    </div>
-                    <div class="right-col">
-                    	<h3>Firefox</h3>
-                    	<h4>View Source</h4>
-                            <ul>
-                            	<li>Mac: Cmd+U</li>
-                                <li>PC: Ctrl+U</li>
-                            </ul>
-                        <h4>Firebug</h4>
-                        <p><a href="https://getfirebug.com/" target="_blank">getfirebug.com</a></p>
-                            <ul>
-                            	<li>right click > Inspect Element with Firebug<br />
-                                OR<br />
-                                click Firebug icon in toolbar</li>
-                            </ul>
-                	</div>
-                </section>
-                
-                
+             
                 <section>
                 	<h2>Paragraph Element</h2>
                     <div class="left-col">
@@ -292,6 +246,7 @@
                         <h5>Header 5</h5>
                         <h6>Header 6</h6>
                     </div>
+                    <p>Header element numbers indicate hierarchy, not size, with h1 the most important and h6 the least important.</p>
                 </section>
                 
                 <section>
@@ -351,17 +306,74 @@
                 </section>
                 
                 <section>
+                	<h2>Attributes and Values</h2>
+                    <ul>
+                    	<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes">Attributes</a> and values work together to provide additional information about an HTML element.</li>
+                        <li>The attribute/value pair is located inside the opening HTML tag after the HTML element and before the right angle bracket.</li>
+                        <li>Some attributes can only be used with specific HTML elements, while others are <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">global attributes</a> that are available to all HTML elements.</li>
+                    </ul>
+                </section>
+                
+                <section>
                 	<h2>Div Element</h2>
-                    <p>example that shows an attribute and value</p>
+                    <p>example that shows an attribute and value with labels</p>
+                    <ul>
+                    	<li>generic elements that are used to create containers (divisions) to group HTML elements</li>
+                        <li>can use class and id attributes to identify divs so that they can be targeted by CSS or JS</li>
+                    </ul>
                 </section>
                 
                 <section>
                 	<h2>Making a Link</h2>
+                    picture of link with parts labeled
+                    Links are defined by anchor elements
+                    a - 
+                    href - attribute that identifies the link target
+                    link target - url or url fragment
                 </section>
                 
                 <section>
                 	<h2>Embedding an Image</h2>
+                    <img src="PLACEKITTEN" alt="kitten" />
+					width and height attributes
                 </section>
+                
+                <section>
+                	<h2>Our Website Files</h2>
+                    <p>screenshot of website file structure here</p>
+                </section>
+                
+                <section>
+                	<h2>How to Look at HTML in the Browser</h2>
+                    <div class="left-col">
+                    	<h3>Chrome</h3>
+                   		<h4>View Source</h4>
+                    		<ul>
+                            	<li>Mac: ⌘-Option-U</li>
+                                <li>PC: Ctrl+U</li>
+                            </ul>
+                        <h4>Inspector</h4>
+                            <ul>
+                            	<li>right click > Inspect Element</li>
+                            </ul>
+                    </div>
+                    <div class="right-col">
+                    	<h3>Firefox</h3>
+                    	<h4>View Source</h4>
+                            <ul>
+                            	<li>Mac: Cmd+U</li>
+                                <li>PC: Ctrl+U</li>
+                            </ul>
+                        <h4>Firebug</h4>
+                        <p><a href="https://getfirebug.com/" target="_blank">getfirebug.com</a></p>
+                            <ul>
+                            	<li>right click > Inspect Element with Firebug<br />
+                                OR<br />
+                                click Firebug icon in toolbar</li>
+                            </ul>
+                	</div>
+                </section>
+                
                 
                 <section>
                 	<h2>More Resources</h2>
