@@ -50,13 +50,11 @@
 
 				<section>
 					<h2>What is CSS?</h2>
-                    <section id="fragments">
                         <ul>
                         	<li>CSS stands for Cascading Style Sheets</li>
                             <li>Used to apply styling to HTML elements using hierarchical (cascading) logic.</li>
                             <li>Replaces table-based layouts and inline HTML style declarations of the 1990s and early 2000s.</li>
                         </ul>
-                    </section>
 				</section>
                 
                 <section>
@@ -95,9 +93,9 @@
     <span class="tag"><<span class="element">head</span>></span>
     	<span class="tag"><<span class="element">title</span>></span>Page Title<span class="tag"><&#47;<span class="element">title</span>></span>
         <span class="tag"><<span class="element">style</span>></span>
-            <span class="selector">body</span> <span class="curly-brace">{</span>
+            <span class="selector">body</span> <span class="curly-bracket">{</span>
             	<span class="property">background-color:</span> <span class="value">#ca0164;</span>
-            <span class="curly-brace">}</span>
+            <span class="curly-bracket">}</span>
             <span class="selector">h1</span> <span class="curly-bracket">{</span>
             	<span class="property">font-size:</span> <span class="value">40px;</span>
             <span class="curly-bracket">}</span>
@@ -141,7 +139,8 @@
                     picture of selector, property, and value with labels
                     <ul>
                     	<li>An unlimited number of declarations can be within a style rule.</li>
-                        <li>Each declaration ends with a semicolon.</li>
+                        <li>Multiple selectors can be grouped with each set of style declarations</li>
+                        <li>Each style declaration ends with a semicolon.</li>
                         <li>An opening curly bracket follows the selector and precedes the first declaration. A closing curly bracket follows the last declaration.</li>
                     </ul>
                 </section>
@@ -157,25 +156,33 @@
                 </section>
                 <section>
                 	<h2>Selecting by HTML Element</h2>
-                    
+                    p {
+                    property: value;
+                    }
                 </section>
                 <section>
                 	<h2>What are Class and ID Values?</h2>
                 </section>
                 <section>
                 	<h2>Selecting by Class Value</h2>
-                    
+                    .class {
+                    property: value;
+                    }
                 </section>
                 <section>
                 	<h2>Selecting by ID Value</h2>
-                    
+                    #id {
+                    property: value;
+                    }
                 </section>
                 <section>
                 	<h2>What is a Pseudo Class?</h2>
                 </section>
                 <section>
                 	<h2>Selecting by Pseudo Class</h2>
-                    
+                    selector:pseudo-class {
+                    property: value;
+                    }
                 </section>
                 <section>
                 	<h2>Using Compound Selectors</h2>
