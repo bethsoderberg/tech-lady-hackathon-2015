@@ -234,10 +234,6 @@
     <span class="property">color:</span> <span class="value">#333333;</span>
 <span class="curly-bracket">}</span>
                     </pre>
-                    <ul>
-                    	<li>Multiple selectors can use the same style declaration.</li>
-                        <li>Multiple selectors need to be separated by commas.</li>
-                    </ul>
                 </section>
                 <section>
                 	<h2>Selecting by ID Value</h2>
@@ -326,34 +322,60 @@
                 </section>
                 <section>
                 	<h2>What is a Pseudo Class?</h2>
+                    <ul>
+                    	<li>Pseudo-classes are special keywords that are added to a selector to indicate a special state of the element</li>
+                        <li>Check out the Mozilla Developer's Network full <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target="_blank">list of pseudo-classes</a>.</li>
+                        </ul>
                 </section>
                 <section>
-                	<h2>Selecting by Pseudo Class</h2>
-                    <div class="left-col"><pre class="half">
-<span class="tag"><<span class="element">body</span>></span>
-  <span class="tag"><<span class="element">div <span class="attribute">id=</span><span class="value">"main"</span></span></span>></span>
-    <span class="tag"><<span class="element">h1</span>></span>Headline<span class="tag"><&#47;<span class="element">h1</span>></span>
-      <span class="tag"><<span class="element">div <span class="attribute">class=</span><span class="value">"teaser"</span></span></span>></span>
-        <span class="tag"><<span class="element">h2</span>></span>Subhead<span class="tag"><&#47;<span class="element">h2</span>></span>
-     	<span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
-     	<span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
-      <span class="tag"><&#47;<span class="element">div</span>></span>
-      <span class="tag"><<span class="element">div <span class="attribute">class=</span><span class="value">"teaser"</span></span></span>></span>
-     	<span class="tag"><<span class="element">h2</span>></span>Subhead<span class="tag"><&#47;<span class="element">h2</span>></span>
-        <span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
-     	<span class="tag"><<span class="element">h3</span>></span>Sub-Subhead<span class="tag"><&#47;<span class="element">h3</span>></span>
-        <span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
-      <span class="tag"><&#47;<span class="element">div</span>></span>
-  <span class="tag"><&#47;<span class="element">div</span>></span>
-  <span class="tag"><<span class="element">div <span class="attribute">id=</span><span class="value">"sidebar"</span></span></span>></span>
-    <span class="tag"><<span class="element">h2</span>></span>Headline<span class="tag"><&#47;<span class="element">h2</span>></span>
-    <span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
-  	<span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
-  <span class="tag"><&#47;<span class="element">div</span>></span>
-<span class="tag"><&#47;<span class="element">body</span>></span>
-                    </pre>
-                    </div>
+                	<h2>Pseudo Classes and Links</h2>
+                    <p>Pseudo classes are frequently used to style links in different states.</p>
+                    <div class="left-col center-h3">
+                    <h3>Regular Link Style</h3>
+<pre>
+<span class="selector">a</span> <span class="curly-bracket">{</span>
+    <span class="property">color:</span> <span class="value">red;</span>
+<span class="curly-bracket">}</span>
+</pre>
+                    <h3>Unvisited Link</h3>
+<pre>
+<span class="selector">a:link</span> <span class="curly-bracket">{</span>
+    <span class="property">color:</span> <span class="value">orange;</span>
+<span class="curly-bracket">}</span>
+</pre>
 
+                    <h3>Visited Link</h3>
+<pre>
+<span class="selector">a:visited</span> <span class="curly-bracket">{</span>
+    <span class="property">color:</span> <span class="value">yellow;</span>
+<span class="curly-bracket">}</span>
+</pre>
+</div>
+<div class="right-col center-h3">
+                    <h3>Hover Link</h3>
+<pre>
+<span class="selector">a:visited</span> <span class="curly-bracket">{</span>
+    <span class="property">color:</span> <span class="value">green;</span>
+<span class="curly-bracket">}</span>
+</pre>
+
+                    <h3>Current Link</h3>
+<pre>
+<span class="selector">a:active</span> <span class="curly-bracket">{</span>
+    <span class="property">color:</span> <span class="value">blue;</span>
+<span class="curly-bracket">}</span>
+</pre>
+                    <h3>Focus Link</h3>
+<pre>
+<span class="selector">a:focus</span> <span class="curly-bracket">{</span>
+    <span class="property">color:</span> <span class="value">purple;</span>
+<span class="curly-bracket">}</span>
+</pre>
+</div>
+                    <ul>
+                    	<li>Pseudo-classes are special keywords that are added to a selector to indicate a special state of the element</li>
+                        <li>Check out the Mozilla Developer's Network full <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target="_blank">list of pseudo-classes</a>.</li>
+                        </ul>
                 </section>
                 <section>
                 	<h2>Using Compound Selectors</h2>
@@ -381,7 +403,48 @@
 <span class="tag"><&#47;<span class="element">body</span>></span>
                     </pre>
                     </div>
+					<div class="right-col">
+<pre>
+<span class="selector">h2</span> <span class="curly-bracket">{</span>
+    <span class="property">color:</span> <span class="value">green;</span>
+<span class="curly-bracket">}</span>
 
+<span class="selector">.teaser h2</span> <span class="curly-bracket">{</span>
+    <span class="property">color:</span> <span class="value">red;</span>
+<span class="curly-bracket">}</span>
+</pre>
+                    	<ul>
+                        	<li>Compound selectors combine two or more selectors to target specific elements.</li>
+                            <li>The more selectors you have, the more specific the style rule will be.</li>
+                            <li>A space is required in between each selector.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                	<h2>CSS Properties</h2>
+                    <p>Properties are the part of a CSS declaration that indicates the type of style that will be applied.</p>
+                    <p>See a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">full list of CSS properties that are available</a> from the Mozilla Developer Network.</p>
+                    <h3>Some common properties:</h3>
+                    <div class="left-col">
+                    	<ul>
+                        	<li>font-size</li>
+                            <li>font-family</li>
+                            <li>color</li>
+                            <li>background-color</li>
+                            <li>margin</li>
+                            <li>padding</li>
+                        </ul>
+                    </div>
+                    <div class="right-col">
+                    	<ul>
+                        	<li>float</li>
+                            <li>width</li>
+                            <li>height</li>
+                            <li>border</li>
+                            <li>display</li>
+                            <li>position</li>
+                        </ul>
+                    </div>
                 </section>
                 <section>
                 	<h2>Our Website Files</h2>
