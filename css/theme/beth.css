@@ -290,6 +290,26 @@ body {
 	color: green;
 }
 
+.attribute {
+	color: red;
+}
+
+.value {
+	color: cyan;
+}
+
+.property {
+	color: yellow;
+}
+
+.selector {
+	color: blue;
+}
+
+.curly-bracket {
+	color: #093;
+}
+
 /* Nesting */
 .nest-1 {
 	color: red;
