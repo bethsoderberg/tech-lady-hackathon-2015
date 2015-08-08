@@ -284,7 +284,8 @@ body {
  * CODE FORMATTING
  *********************************************/
 .tag,
-.tag-highlight {
+.tag-highlight,
+.selector {
 	color: #f5604b;
 }
 
@@ -298,8 +299,7 @@ body {
 }
  
 .element-highlight,
-.value,
-.selector {
+.value {
 	color: #4b8bf5;
 }
 

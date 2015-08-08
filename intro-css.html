@@ -136,16 +136,16 @@
                 
                 <section>
                 	<h2>CSS Style Rule Syntax</h2>
-                    picture of selector, property, and value with labels
-                    <ul>
-                    	<li>An unlimited number of declarations can be within a style rule.</li>
-                        <li>Multiple selectors can be grouped with each set of style declarations</li>
-                        <li>Each style declaration ends with a semicolon.</li>
-                        <li>An opening curly bracket follows the selector and precedes the first declaration. A closing curly bracket follows the last declaration.</li>
-                    </ul>
+                    <img class="illustration" src="images/css-rule.png" width="614" height="240" alt="css rule">
+<ul>
+       	  <li>An unlimited number of declarations can be within a style rule.</li>
+          <li>Multiple selectors can be grouped with each set of style declarations.</li>
+          <li>Each style declaration ends with a semicolon.</li>
+          <li>An opening curly bracket follows the selector and precedes the first declaration. A closing curly bracket follows the last declaration.</li>
+        </ul>
                 </section>
                 <section>
-                	<h2>Selectors</h2>
+               	  <h2>Selectors</h2>
                     <ul>
                     	<li>HTML elements</li>
                         <li>Class values</li>
@@ -156,47 +156,213 @@
                 </section>
                 <section>
                 	<h2>Selecting by HTML Element</h2>
-                    p {
-                    property: value;
-                    }
+                    <div class="left-col"><pre class="half">
+<span class="tag"><<span class="element">body</span>></span>
+   <span class="tag"><<span class="element">div <span class="attribute">class=</span><span class="value">"main"</span></span></span>></span>
+     	<span class="tag"><<span class="element">h1</span>></span>Headline<span class="tag"><&#47;<span class="element">h1</span>></span>
+     	<span class="tag"><<span class="element">p</span>></span>This is a Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+     	<span class="tag"><<span class="element">p</span>></span>This is a Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+   <span class="tag"><&#47;<span class="element">div</span>></span>
+   <span class="tag"><<span class="element">div <span class="attribute">class=</span><span class="value">"sidebar"</span></span></span>></span>
+     	<span class="tag"><<span class="element">h2</span>></span>Headline<span class="tag"><&#47;<span class="element">h2</span>></span>
+     	<span class="tag"><<span class="element">p</span>></span>This is a Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+     	<span class="tag"><<span class="element">p</span>></span>This is a Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+   <span class="tag"><&#47;<span class="element">div</span>></span>
+<span class="tag"><&#47;<span class="element">body</span>></span>
+                    </pre>
+                    </div>
+                    <div class="right-col">
+                    <pre class="half">
+<span class="selector">body</span> <span class="curly-bracket">{</span>
+    <span class="property">background-color:</span> <span class="value">#ca0164;</span>
+<span class="curly-bracket">}</span>
+                    </pre>
+                    </div>
                 </section>
                 <section>
                 	<h2>What are Class and ID Values?</h2>
                 </section>
                 <section>
                 	<h2>Selecting by Class Value</h2>
-                    .class {
-                    property: value;
-                    }
+                    <div class="left-col"><pre class="half">
+<span class="tag"><<span class="element">body</span>></span>
+  <span class="tag"><<span class="element">div <span class="attribute">id=</span><span class="value">"main"</span></span></span>></span>
+    <span class="tag"><<span class="element">h1</span>></span>Headline<span class="tag"><&#47;<span class="element">h1</span>></span>
+      <span class="tag"><<span class="element">div <span class="attribute">class=</span><span class="value">"teaser"</span></span></span>></span>
+        <span class="tag"><<span class="element">h2</span>></span>Subhead<span class="tag"><&#47;<span class="element">h2</span>></span>
+     	<span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+     	<span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+      <span class="tag"><&#47;<span class="element">div</span>></span>
+      <span class="tag"><<span class="element">div <span class="attribute">class=</span><span class="value">"teaser"</span></span></span>></span>
+     	<span class="tag"><<span class="element">h2</span>></span>Subhead<span class="tag"><&#47;<span class="element">h2</span>></span>
+        <span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+     	<span class="tag"><<span class="element">h3</span>></span>Sub-Subhead<span class="tag"><&#47;<span class="element">h3</span>></span>
+        <span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+      <span class="tag"><&#47;<span class="element">div</span>></span>
+  <span class="tag"><&#47;<span class="element">div</span>></span>
+  <span class="tag"><<span class="element">div <span class="attribute">id=</span><span class="value">"sidebar"</span></span></span>></span>
+    <span class="tag"><<span class="element">h2</span>></span>Headline<span class="tag"><&#47;<span class="element">h2</span>></span>
+    <span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+  	<span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+  <span class="tag"><&#47;<span class="element">div</span>></span>
+<span class="tag"><&#47;<span class="element">body</span>></span>
+                    </pre>
+                    </div>
+                    <div class="right-col">
+                    <pre class="half">
+<span class="selector">.teaser</span> <span class="curly-bracket">{</span>
+    <span class="property">color:</span> <span class="value">#333333;</span>
+<span class="curly-bracket">}</span>
+                    </pre>
                 </section>
                 <section>
                 	<h2>Selecting by ID Value</h2>
-                    #id {
-                    property: value;
-                    }
+                    <div class="left-col"><pre class="half">
+<span class="tag"><<span class="element">body</span>></span>
+  <span class="tag"><<span class="element">div <span class="attribute">id=</span><span class="value">"main"</span></span></span>></span>
+    <span class="tag"><<span class="element">h1</span>></span>Headline<span class="tag"><&#47;<span class="element">h1</span>></span>
+      <span class="tag"><<span class="element">div <span class="attribute">class=</span><span class="value">"teaser"</span></span></span>></span>
+        <span class="tag"><<span class="element">h2</span>></span>Subhead<span class="tag"><&#47;<span class="element">h2</span>></span>
+     	<span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+     	<span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+      <span class="tag"><&#47;<span class="element">div</span>></span>
+      <span class="tag"><<span class="element">div <span class="attribute">class=</span><span class="value">"teaser"</span></span></span>></span>
+     	<span class="tag"><<span class="element">h2</span>></span>Subhead<span class="tag"><&#47;<span class="element">h2</span>></span>
+        <span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+     	<span class="tag"><<span class="element">h3</span>></span>Sub-Subhead<span class="tag"><&#47;<span class="element">h3</span>></span>
+        <span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+      <span class="tag"><&#47;<span class="element">div</span>></span>
+  <span class="tag"><&#47;<span class="element">div</span>></span>
+  <span class="tag"><<span class="element">div <span class="attribute">id=</span><span class="value">"sidebar"</span></span></span>></span>
+    <span class="tag"><<span class="element">h2</span>></span>Headline<span class="tag"><&#47;<span class="element">h2</span>></span>
+    <span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+  	<span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+  <span class="tag"><&#47;<span class="element">div</span>></span>
+<span class="tag"><&#47;<span class="element">body</span>></span>
+                    </pre>
+                    </div>
+                    <div class="right-col">
+                    <pre class="half">
+<span class="selector">#main</span> <span class="curly-bracket">{</span>
+    <span class="property">width:</span> <span class="value">75%;</span>
+    <span class="property">float:</span> <span class="value">left;</span>
+<span class="curly-bracket">}</span>
+
+<span class="selector">#sidebar</span> <span class="curly-bracket">{</span>
+    <span class="property">width:</span> <span class="value">25%;</span>
+    <span class="property">float:</span> <span class="value">left;</span>
+<span class="curly-bracket">}</span>
+                    </pre>
+                </section>
+                <section>
+                	<h2>Grouping</h2>
+                    <div class="left-col"><pre class="half">
+<span class="tag"><<span class="element">body</span>></span>
+  <span class="tag"><<span class="element">div <span class="attribute">id=</span><span class="value">"main"</span></span></span>></span>
+    <span class="tag"><<span class="element">h1</span>></span>Headline<span class="tag"><&#47;<span class="element">h1</span>></span>
+      <span class="tag"><<span class="element">div <span class="attribute">class=</span><span class="value">"teaser"</span></span></span>></span>
+        <span class="tag"><<span class="element">h2</span>></span>Subhead<span class="tag"><&#47;<span class="element">h2</span>></span>
+     	<span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+     	<span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+      <span class="tag"><&#47;<span class="element">div</span>></span>
+      <span class="tag"><<span class="element">div <span class="attribute">class=</span><span class="value">"teaser"</span></span></span>></span>
+     	<span class="tag"><<span class="element">h2</span>></span>Subhead<span class="tag"><&#47;<span class="element">h2</span>></span>
+        <span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+     	<span class="tag"><<span class="element">h3</span>></span>Sub-Subhead<span class="tag"><&#47;<span class="element">h3</span>></span>
+        <span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+      <span class="tag"><&#47;<span class="element">div</span>></span>
+  <span class="tag"><&#47;<span class="element">div</span>></span>
+  <span class="tag"><<span class="element">div <span class="attribute">id=</span><span class="value">"sidebar"</span></span></span>></span>
+    <span class="tag"><<span class="element">h2</span>></span>Headline<span class="tag"><&#47;<span class="element">h2</span>></span>
+    <span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+  	<span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+  <span class="tag"><&#47;<span class="element">div</span>></span>
+<span class="tag"><&#47;<span class="element">body</span>></span>
+                    </pre>
+                    </div>
+                    <div class="right-col">
+                    <pre class="half">
+<span class="selector">#main </span> <span class="curly-bracket">{</span>
+    <span class="property">width:</span> <span class="value">75%;</span>
+<span class="curly-bracket">}</span>
+
+<span class="selector">#sidebar</span> <span class="curly-bracket">{</span>
+    <span class="property">width:</span> <span class="value">25%;</span>
+<span class="curly-bracket">}</span>
+
+<span class="selector">#main, #sidebar </span> <span class="curly-bracket">{</span>
+    <span class="property">float:</span> <span class="value">left;</span>
+<span class="curly-bracket">}</span>
+                    </pre>
                 </section>
                 <section>
                 	<h2>What is a Pseudo Class?</h2>
                 </section>
                 <section>
                 	<h2>Selecting by Pseudo Class</h2>
-                    selector:pseudo-class {
-                    property: value;
-                    }
+                    <div class="left-col"><pre class="half">
+<span class="tag"><<span class="element">body</span>></span>
+  <span class="tag"><<span class="element">div <span class="attribute">id=</span><span class="value">"main"</span></span></span>></span>
+    <span class="tag"><<span class="element">h1</span>></span>Headline<span class="tag"><&#47;<span class="element">h1</span>></span>
+      <span class="tag"><<span class="element">div <span class="attribute">class=</span><span class="value">"teaser"</span></span></span>></span>
+        <span class="tag"><<span class="element">h2</span>></span>Subhead<span class="tag"><&#47;<span class="element">h2</span>></span>
+     	<span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+     	<span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+      <span class="tag"><&#47;<span class="element">div</span>></span>
+      <span class="tag"><<span class="element">div <span class="attribute">class=</span><span class="value">"teaser"</span></span></span>></span>
+     	<span class="tag"><<span class="element">h2</span>></span>Subhead<span class="tag"><&#47;<span class="element">h2</span>></span>
+        <span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+     	<span class="tag"><<span class="element">h3</span>></span>Sub-Subhead<span class="tag"><&#47;<span class="element">h3</span>></span>
+        <span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+      <span class="tag"><&#47;<span class="element">div</span>></span>
+  <span class="tag"><&#47;<span class="element">div</span>></span>
+  <span class="tag"><<span class="element">div <span class="attribute">id=</span><span class="value">"sidebar"</span></span></span>></span>
+    <span class="tag"><<span class="element">h2</span>></span>Headline<span class="tag"><&#47;<span class="element">h2</span>></span>
+    <span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+  	<span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+  <span class="tag"><&#47;<span class="element">div</span>></span>
+<span class="tag"><&#47;<span class="element">body</span>></span>
+                    </pre>
+                    </div>
+
                 </section>
                 <section>
                 	<h2>Using Compound Selectors</h2>
+                    <div class="left-col"><pre class="half">
+<span class="tag"><<span class="element">body</span>></span>
+  <span class="tag"><<span class="element">div <span class="attribute">id=</span><span class="value">"main"</span></span></span>></span>
+    <span class="tag"><<span class="element">h1</span>></span>Headline<span class="tag"><&#47;<span class="element">h1</span>></span>
+      <span class="tag"><<span class="element">div <span class="attribute">class=</span><span class="value">"teaser"</span></span></span>></span>
+        <span class="tag"><<span class="element">h2</span>></span>Subhead<span class="tag"><&#47;<span class="element">h2</span>></span>
+     	<span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+     	<span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+      <span class="tag"><&#47;<span class="element">div</span>></span>
+      <span class="tag"><<span class="element">div <span class="attribute">class=</span><span class="value">"teaser"</span></span></span>></span>
+     	<span class="tag"><<span class="element">h2</span>></span>Subhead<span class="tag"><&#47;<span class="element">h2</span>></span>
+        <span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+     	<span class="tag"><<span class="element">h3</span>></span>Sub-Subhead<span class="tag"><&#47;<span class="element">h3</span>></span>
+        <span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+      <span class="tag"><&#47;<span class="element">div</span>></span>
+  <span class="tag"><&#47;<span class="element">div</span>></span>
+  <span class="tag"><<span class="element">div <span class="attribute">id=</span><span class="value">"sidebar"</span></span></span>></span>
+    <span class="tag"><<span class="element">h2</span>></span>Headline<span class="tag"><&#47;<span class="element">h2</span>></span>
+    <span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+  	<span class="tag"><<span class="element">p</span>></span>Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+  <span class="tag"><&#47;<span class="element">div</span>></span>
+<span class="tag"><&#47;<span class="element">body</span>></span>
+                    </pre>
+                    </div>
+
                 </section>
                 <section>
                 	<h2>Our Website Files</h2>
-                    <p>screenshot of website file structure here</p>
+                <img class="illustration" src="images/file-structure.png" width="600" height="118" alt="file structure"> </section>
+                
+              <section>
+               	<h2>More Resources</h2>
                 </section>
                 
-                <section>
-                	<h2>More Resources</h2>
-                </section>
-                
-			</div>
+		  </div>
 
 		</div>
 
