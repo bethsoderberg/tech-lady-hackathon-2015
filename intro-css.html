@@ -52,14 +52,134 @@
 					<h2>What is CSS?</h2>
                     <section id="fragments">
                         <ul>
-                        	<li>HTML stands for Hypertext Markup Language</li>
-                            <li>Used to "mark up" text in order to make the "skeleton" of a web page</li>
+                        	<li>CSS stands for Cascading Style Sheets</li>
+                            <li>Used to apply styling to HTML elements using hierarchical (cascading) logic.</li>
+                            <li>Replaces table-based layouts and inline HTML style declarations of the 1990s and early 2000s.</li>
                         </ul>
                     </section>
 				</section>
                 
+                <section>
+                	<h2>How is CSS included on a webpage?</h2>
+                    <ul>
+                    	<li>Inline Styles</li>
+                        <li>Embedded Styles</li>
+                        <li>Linked stylesheet</li>
+                    </ul>
+                </section>
+                         
+                <section>
+                	<h2>Inline Styles</h2>
+<pre>
+<span class="tag"><<span class="element">!DOCTYPE html</span>></span>
+<span class="tag"><<span class="element">html</span>></span>
+    <span class="tag"><<span class="element">head</span>></span>
+    	<span class="tag"><<span class="element">title</span>></span>Page Title<span class="tag"><&#47;<span class="element">title</span>></span>
+    <span class="tag"><&#47;<span class="element">head</span>></span>
+    <span class="tag"><<span class="element">body</span> <span class="attribute">style=</span><span class="value">"background-color: #ca0164;"</span>></span>
+        <span class="tag"><<span class="element">h1</span> <span class="attribute">style=</span><span class="value">"font-size: 40px;"</span>></span>This is a Headline<span class="tag"><&#47;<span class="element">h1</span>></span>
+        <span class="tag"><<span class="element">p</span>></span>This is a Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+    <span class="tag"><&#47;<span class="element">body</span>></span>
+<span class="tag"><&#47;<span class="element">html</span>></span>
+                    </pre>
+                    <ul>
+                    	<li>Inline styling is inefficient because each HTML element needs to be styled individually, which is hard to keep consistent even on just one page.</li>
+                    </ul>
+                </section>
                 
+                <section>
+                	<h2>Embedded Styles</h2>
+<pre>
+<span class="tag"><<span class="element">!DOCTYPE html</span>></span>
+<span class="tag"><<span class="element">html</span>></span>
+    <span class="tag"><<span class="element">head</span>></span>
+    	<span class="tag"><<span class="element">title</span>></span>Page Title<span class="tag"><&#47;<span class="element">title</span>></span>
+        <span class="tag"><<span class="element">style</span>></span>
+            <span class="selector">body</span> <span class="curly-brace">{</span>
+            	<span class="property">background-color:</span> <span class="value">#ca0164;</span>
+            <span class="curly-brace">}</span>
+            <span class="selector">h1</span> <span class="curly-bracket">{</span>
+            	<span class="property">font-size:</span> <span class="value">40px;</span>
+            <span class="curly-bracket">}</span>
+        <span class="tag"><&#47;<span class="element">style</span>></span>
+    <span class="tag"><&#47;<span class="element">head</span>></span>
+    <span class="tag"><<span class="element">body</span>></span>
+        <span class="tag"><<span class="element">h1</span>></span>This is a Headline<span class="tag"><&#47;<span class="element">h1</span>></span>
+        <span class="tag"><<span class="element">p</span>></span>This is a Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+    <span class="tag"><&#47;<span class="element">body</span>></span>
+<span class="tag"><&#47;<span class="element">html</span>></span>
+                    </pre>
+                    <ul>
+                    	<li>Styles must be copied from page to page, making maintaining the code difficult.</li>
+                    </ul>
+                </section>
                 
+                <section>
+                	<h2>Linked Stylesheet</h2>
+<pre>
+<span class="tag"><<span class="element">!DOCTYPE html</span>></span>
+<span class="tag"><<span class="element">html</span>></span>
+    <span class="tag"><<span class="element">head</span>></span>
+    	<span class="tag"><<span class="element">title</span>></span>Page Title<span class="tag"><&#47;<span class="element">title</span>></span>
+        <span class="tag"><</span><span class="element">link</span> <span class="attribute">rel=</span><span class="value">"stylesheet"</span> <span class="attribute">type=</span><span class="value">"text/css"</span> <span class="attribute">href=</span><span class="value">"style.css"</span><span class="tag">></span>
+    <span class="tag"><&#47;<span class="element">head</span>></span>
+    <span class="tag"><<span class="element">body</span>></span>
+        <span class="tag"><<span class="element">h1</span>></span>This is a Headline<span class="tag"><&#47;<span class="element">h1</span>></span>
+        <span class="tag"><<span class="element">p</span>></span>This is a Paragraph.<span class="tag"><&#47;<span class="element">p</span>></span>
+    <span class="tag"><&#47;<span class="element">body</span>></span>
+<span class="tag"><&#47;<span class="element">html</span>></span>
+                    </pre>
+                    <ul>
+                    	<li>This is the most common method of including CSS in web pages.</li>
+                        <li>Keeping all CSS in one file makes updates across many pages efficient.</li>
+                        <li>Storing all CSS in one place helps keep file sizes down, which makes web pages load faster.</li>
+                    </ul>
+                </section>
+                
+                <section>
+                	<h2>CSS Style Rule Syntax</h2>
+                    picture of selector, property, and value with labels
+                    <ul>
+                    	<li>An unlimited number of declarations can be within a style rule.</li>
+                        <li>Each declaration ends with a semicolon.</li>
+                        <li>An opening curly bracket follows the selector and precedes the first declaration. A closing curly bracket follows the last declaration.</li>
+                    </ul>
+                </section>
+                <section>
+                	<h2>Selectors</h2>
+                    <ul>
+                    	<li>HTML elements</li>
+                        <li>Class values</li>
+                        <li>ID values</li>
+                        <li>Pseudo classes</li>
+                        <li>Compound selectors (combinations of the above elements and values)</li>
+                    </ul>
+                </section>
+                <section>
+                	<h2>Selecting by HTML Element</h2>
+                    
+                </section>
+                <section>
+                	<h2>What are Class and ID Values?</h2>
+                </section>
+                <section>
+                	<h2>Selecting by Class Value</h2>
+                    
+                </section>
+                <section>
+                	<h2>Selecting by ID Value</h2>
+                    
+                </section>
+                <section>
+                	<h2>What is a Pseudo Class?</h2>
+                </section>
+                <section>
+                	<h2>Selecting by Pseudo Class</h2>
+                    
+                </section>
+                <section>
+                	<h2>Using Compound Selectors</h2>
+                </section>
                 <section>
                 	<h2>More Resources</h2>
                 </section>
