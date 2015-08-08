@@ -64,17 +64,17 @@
                 
                 <section>
                 	<h2>Elements and Tags</h2>
-                    <p>image with an element and tag pair with parts (element, opening tag, closing tag) labeled</p>
-                    <ul>
-                    	<li>Elements indicate the purpose of a tag.</li>
-                        <li>Tags indicate the beginning and the end of an element.</li>
-                    </ul>
+                    <img src="images/element-and-tag.png" class="illustration" width="635" height="200" alt="paragraph with tag and element labeled">
+<ul>
+       	  <li>Elements indicate the purpose of a tag.</li>
+          <li>Tags indicate the beginning and the end of an element.</li>
+        </ul>
                     
                     <p>You can find a full list of all HTML elements at the Mozilla Developer Network <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Element Reference Page</a>.</p>
                 </section>
                 
                 <section>
-                	<h2>Basic HTML Page Structure</h2>
+               	  <h2>Basic HTML Page Structure</h2>
 <pre>
 <span class="tag"><<span class="element">!DOCTYPE html</span>></span>
 <span class="tag"><<span class="element">html</span>></span>
@@ -90,7 +90,7 @@
                 </section>
                 
                 <section>
-           	    	<img src="images/basic-html-in-browser.png" width="954" height="628" alt="Screenshot of Basic HTML code in browser"> 
+       	    	  <img src="images/basic-html-in-browser.png" width="954" height="628" alt="Screenshot of Basic HTML code in browser"> 
                 </section>
                 <section>
                	  <h2>Doctype Declaration</h2>
@@ -146,19 +146,10 @@
                     </pre>
                     <ul>
                     	<li>includes metadata elements that do not render in the browser</li>
-                        <li>the <span class="tag"><<span class="element">title</span>></span> element is required</li>
-                        <li>the only HTML elements that can be used in the <span class="tag"><<span class="element">head</span>></span> element are:
-                        <ul>
-                        	<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base" target="_blank">&lt;base&gt;</a></li>
-	<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link" target="_blank">&lt;link&gt;</a></li>
-	<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="_blank">&lt;meta&gt;</a></li>
-	<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript" target="_blank">&lt;noscript&gt;</a></li>
-	<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script" target="_blank">&lt;script&gt;</a></li>
-	<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style" target="_blank">&lt;style&gt;</a></li>
-	<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" target="_blank">&lt;title&gt;</a> (required)</li>
-                        </ul>
-                        </li>
-                    </ul>
+                        <li>includes links to scripts and style sheets or includes this code inline</li>
+                      <li>The <span class="tag"><<span class="element">title</span>></span> element is required.</li>
+                        <li>There is a restricted list of HTML elements that can be used within the <span class="tag"><<span class="element">head</span>></span> element: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base" target="_blank"><span class="tag"><<span class="element">base</span>></span></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link" target="_blank"><span class="tag"><<span class="element">link</span>></span></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="_blank"><span class="tag"><<span class="element">meta</span>></span></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript" target="_blank"><span class="tag"><<span class="element">noscript</span>></span></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script" target="_blank"><span class="tag"><<span class="element">script</span>></span></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style" target="_blank"><span class="tag"><<span class="element">style</span>></span></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" target="_blank"><span class="tag"><<span class="element">title</span>></span></a> (required).</li>
+                  </ul>
                 </section>
                 
                 <section>
@@ -311,17 +302,21 @@
                 
                 <section>
                 	<h2>Attributes and Values</h2>
-                    sample with picture
-                    <ul>
-                    	<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes">Attributes</a> and values work together to provide additional information about an HTML element.</li>
-                        <li>The attribute/value pair is located inside the opening HTML tag after the HTML element and before the right angle bracket.</li>
-                        <li>Some attributes can only be used with specific HTML elements, while others are <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">global attributes</a> that are available to all HTML elements.</li>
-                    </ul>
+                  <img class="illustration" src="images/attribute-and-value.png" width="858" height="108" alt="attribute and value illustration">
+<ul>
+       	  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes">Attributes</a> and values work together to provide additional information about an HTML element.</li>
+          <li>The attribute/value pair is located inside the opening HTML tag after the HTML element and before the right angle bracket.</li>
+          <li>Some attributes can only be used with specific HTML elements, while others are <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">global attributes</a> that are available to all HTML elements.</li>
+        </ul>
                 </section>
                 
                 <section>
-                	<h2>Div Element</h2>
-                    <p>example that shows an attribute and value with labels</p>
+               	  <h2>Div Element</h2>
+<pre><span class="tag"><<span class="element">div <span class="attribute">class=</span><span class="value">"footer"</span></span>></span>
+      <span class="tag"><<span class="element">div <span class="attribute">class=</span><span class="value">"footer-left"</span></span>></span>footer content<span class="tag"><&#47;<span class="element">div</span>></span>
+      <span class="tag"><<span class="element">div <span class="attribute">class=</span><span class="value">"footer-right"</span></span>></span>footer content<span class="tag"><&#47;<span class="element">div</span>></span>
+<span class="tag"><&#47;<span class="element">div</span>></span>
+					</pre>
                     <ul>
                     	<li>generic elements that are used to create containers (divisions) to group HTML elements</li>
                         <li>can use class and id attributes to identify divs so that they can be targeted by CSS or JS</li>
@@ -330,26 +325,23 @@
                 
                 <section>
                 	<h2>Making a Link</h2>
-                    picture of link with parts labeled
-                    Links are defined by anchor elements
-                    a - 
-                    href - attribute that identifies the link target
-                    link target - url or url fragment
+                    <img class="illustration" src="images/basic-link.png" width="1058" height="189" alt="basic link example">
+                    <ul>
+                    	<li>The anchor element, href attribute, and link target are the basic required components that make a link.</li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">Attributes frequently used with links</a> include <span class="tag"><<span class="element">target</span>></span>, <span class="tag"><<span class="element">rel</span>></span>, <span class="tag"><<span class="element">type</span>></span>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title" target="_blank"><span class="tag"><<span class="element">title</span>></span></a>.</li>
+                    </ul></section>
+                
+                <section>
+               	  <h2>Embedding an Image</h2>
+                <img class="illustration" src="images/basic-image-embed.png" width="858" height="189" alt="image embed">
+                <ul>
+                    	<li>The image element, source attribute, and image location path are the basic components required to embed an image.</li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank">Attributes frequently used with image embedding </a> include <span class="tag"><<span class="element">alt</span>></span>, <span class="tag"><<span class="element">height</span>></span>, and <span class="tag"><<span class="element">width</span>></span>.</li>
+                    </ul>
                 </section>
                 
                 <section>
-                	<h2>Embedding an Image</h2>
-                    <img src="PLACEKITTEN" alt="kitten" />
-					width and height attributes
-                </section>
-                
-                <section>
-                	<h2>Our Website Files</h2>
-                    <p>screenshot of website file structure here</p>
-                </section>
-                
-                <section>
-                	<h2>How to Look at HTML in the Browser</h2>
+               	  <h2>How to Look at HTML in the Browser</h2>
                     <div class="left-col">
                     	<h3>Chrome</h3>
                    		<h4>View Source</h4>
