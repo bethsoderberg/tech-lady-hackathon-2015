@@ -221,6 +221,10 @@ body {
   background: rgba(255, 255, 255, 0.12);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
+.reveal section img.illustration {
+	box-shadow:none;
+}
+
 .reveal a img {
   -webkit-transition: all 0.15s linear;
   -moz-transition: all 0.15s linear;
